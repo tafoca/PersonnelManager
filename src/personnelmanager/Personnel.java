@@ -10,28 +10,18 @@ package personnelmanager;
  * @author tabueu
  */
 class Personnel {
-    String id ,name, salary, departement;
+  public String id,name, salary, departement;
     
-    public Personnel(String id, String name, String salary, String departement) {
-        this.id = id;
-        this.name = name;
-        this.salary = salary;
-        this.departement = departement;
+  public Personnel(String id,String name, String salary, String departement) {
+       this(name, salary, departement);
+       this.id = id;
     }
-
+ 
     public Personnel(String name, String salary, String departement) {
+       
         this.name = name;
         this.salary = salary;
         this.departement = departement;
-    }
-
-   
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -58,10 +48,23 @@ class Personnel {
         this.departement = departement;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    
+    
     @Override
     public String toString() {
         return "Personnel{" + "id=" + id + ", name=" + name + ", salary=" + salary + ", departement=" + departement + '}';
     }
+    
+    
+  
     
     
     

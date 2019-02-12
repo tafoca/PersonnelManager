@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personnelmanager.AddFonctionController">
+   <children>
+      <Label layoutX="209.0" layoutY="34.0" prefHeight="23.0" prefWidth="231.0" text="Add a Function to a Personnal" textFill="#1b8068" />
+      <TextField fx:id="functionName" layoutX="131.0" layoutY="107.0" prefHeight="25.0" prefWidth="361.0" promptText="name" />
+      <DatePicker fx:id="dateDebut" layoutX="131.0" layoutY="169.0" prefHeight="25.0" prefWidth="361.0" promptText="date de debut" />
+      <ComboBox fx:id="personnel" editable="true" layoutX="131.0" layoutY="226.0" prefHeight="25.0" prefWidth="361.0" promptText="Choisir un personnel " />
+      <Button layoutX="401.0" layoutY="284.0" mnemonicParsing="false" onAction="#saveFonctioning" style="-fx-background-color: #008759;" text="Enregistrer" textFill="#ebeeff" />
+   </children>
+</AnchorPane>

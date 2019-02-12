@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -12,5 +13,10 @@
       <TextField fx:id="salary" layoutX="126.0" layoutY="169.0" prefHeight="25.0" prefWidth="335.0" promptText="salary" />
       <TextField fx:id="departement" layoutX="126.0" layoutY="229.0" prefHeight="25.0" prefWidth="335.0" promptText="Departement" />
       <Button layoutX="397.0" layoutY="288.0" mnemonicParsing="false" onAction="#savePersonnel" prefHeight="25.0" prefWidth="64.0" text="Add" />
+      <Button fx:id="addFonction" layoutX="461.0" layoutY="34.0" mnemonicParsing="false" onAction="#saveFunction" style="-fx-background-color: #008759;" text="Add Function" textFill="#ebeeff">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

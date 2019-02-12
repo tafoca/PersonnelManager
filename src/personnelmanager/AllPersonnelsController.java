@@ -86,6 +86,8 @@ public class AllPersonnelsController implements Initializable {
                 System.out.println("*** -- "+p.toString());
                 
                 listPersonnels.add(p);
+                
+                
                
                 id.setCellValueFactory(new PropertyValueFactory<>("id"));
                 name.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -93,6 +95,7 @@ public class AllPersonnelsController implements Initializable {
                 departement.setCellValueFactory(new PropertyValueFactory<>("departement"));
                
             }
+            personnel.setItems(listPersonnels);
             
         } catch (MalformedURLException ex) {
             Logger.getLogger(AllPersonnelsController.class.getName()).log(Level.SEVERE, null, ex);

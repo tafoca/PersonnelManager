@@ -6,6 +6,7 @@
 package personnelmanager;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
@@ -38,7 +39,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     void savePersonnel(ActionEvent event) {
-          System.out.println(" ecoute ....");
+        System.out.println(" ecoute ....");
           
         JSONObject jSONObject = new JSONObject();
         jSONObject.put("name", name.getText());
@@ -90,6 +91,22 @@ public class FXMLDocumentController implements Initializable {
         }
 
     }
+    
+    
+    @FXML
+    void saveFunction(ActionEvent event) throws IOException {
+        Stage stage = new Stage();
+                Parent root = FXMLLoader.load(getClass().getResource("AddFonction.fxml"));
+                Scene  scene = new  Scene(root);
+                stage.setScene(scene);
+                stage.setAlwaysOnTop(true);
+                stage.setIconified(false);
+                stage.centerOnScreen();
+                stage.setResizable(false);
+                stage.setMaximized(false);
+                stage.show();
+    }
+
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
