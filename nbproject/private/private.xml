@@ -3,10 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/tabueu/Documents/Github/PersonnelManager/src/personnelmanager/Personnel.java</file>
-            <file>file:/home/tabueu/Documents/Github/PersonnelManager/src/personnelmanager/AllPersonnelsController.java</file>
-            <file>file:/home/tabueu/Documents/Github/PersonnelManager/src/personnelmanager/PersonnelManager.java</file>
-            <file>file:/home/tabueu/Documents/Github/PersonnelManager/src/personnelmanager/FXMLDocumentController.java</file>
+            <file>file:/home/tabueu/Documents/Github/PersonnelManager/src/personnelmanager/Fonction.java</file>
+            <file>file:/home/tabueu/Documents/Github/PersonnelManager/src/personnelmanager/AddFonctionController.java</file>
+            <file>file:/home/tabueu/Documents/Github/PersonnelManager/src/personnelmanager/Realisation/AddRealisationController.java</file>
         </group>
     </open-files>
 </project-private>

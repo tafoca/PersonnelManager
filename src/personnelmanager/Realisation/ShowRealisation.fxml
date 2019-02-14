@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personnelmanager.Realisation.ShowRealisationController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="80.0" layoutY="285.0" lineSpacing="2.0" prefHeight="21.0" prefWidth="418.0" style="-fx-background-insets: 10;" text="Detail de Fonction attache a la realisation: " textAlignment="JUSTIFY" textFill="#28c326">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="343.0" prefHeight="15.0" prefWidth="51.0" text="Name :" />
+      <Label layoutX="64.0" layoutY="399.0" text="Debut fonction : " />
+      <TextField fx:id="DatedebFonction" layoutX="179.0" layoutY="394.0" prefHeight="25.0" prefWidth="325.0" />
+      <TextField fx:id="nameFonction" layoutX="179.0" layoutY="338.0" prefHeight="25.0" prefWidth="332.0" />
+      <TextField fx:id="dateDebut" layoutX="180.0" layoutY="144.0" prefHeight="25.0" prefWidth="332.0" />
+      <TextField fx:id="name" layoutX="180.0" layoutY="88.0" prefHeight="25.0" prefWidth="332.0" />
+      <Label layoutX="80.0" layoutY="149.0" text="Date  debut: " />
+      <Label contentDisplay="CENTER" layoutX="81.0" layoutY="39.0" lineSpacing="2.0" prefHeight="21.0" prefWidth="332.0" style="-fx-background-insets: 10;" text="Detail Realisation du  Personnel " textAlignment="JUSTIFY" textFill="#28c326">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="93.0" prefHeight="15.0" prefWidth="63.0" text="Name :" />
+      <Label fx:id="nom_fct" layoutX="498.0" layoutY="286.0" prefHeight="21.0" prefWidth="167.0" textFill="#b93e3e" underline="true">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dateFin" layoutX="181.0" layoutY="195.0" prefHeight="25.0" prefWidth="332.0" />
+      <Label layoutX="80.0" layoutY="200.0" text="Date  fin: " />
+      <Label contentDisplay="CENTER" layoutX="559.0" layoutY="317.0" lineSpacing="2.0" prefHeight="21.0" prefWidth="338.0" style="-fx-background-insets: 10;" text="Detail de Personnel: " textAlignment="JUSTIFY" textFill="#28c326">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="533.0" layoutY="314.0" orientation="VERTICAL" prefHeight="135.0" prefWidth="6.0" style="-fx-background-color: #008212;" />
+      <Label fx:id="nom" layoutX="559.0" layoutY="343.0" prefHeight="36.0" prefWidth="208.0" text="Nom ">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="dept" layoutX="564.0" layoutY="387.0" text="departement" textFill="#f24d4d">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="salaire" layoutX="568.0" layoutY="417.0" text="salaire" textFill="#654f23">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

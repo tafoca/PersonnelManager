@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personnelmanager.ShowPersonnelController">
+   <children>
+      <Label layoutX="81.0" layoutY="83.0" prefHeight="15.0" prefWidth="63.0" text="Name :" />
+      <Label layoutX="81.0" layoutY="139.0" text="Salary : " />
+      <Label layoutX="81.0" layoutY="200.0" text="Departement : " />
+      <TextField fx:id="departement" layoutX="181.0" layoutY="195.0" prefHeight="25.0" prefWidth="325.0" />
+      <TextField fx:id="salary" layoutX="181.0" layoutY="134.0" prefHeight="25.0" prefWidth="325.0" />
+      <TextField fx:id="name" layoutX="181.0" layoutY="78.0" prefHeight="25.0" prefWidth="332.0" />
+      <Label contentDisplay="CENTER" layoutX="181.0" layoutY="29.0" lineSpacing="2.0" prefHeight="21.0" prefWidth="211.0" style="-fx-background-insets: 10;" text="Detail du Personnel " textAlignment="JUSTIFY" textFill="#28c326">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

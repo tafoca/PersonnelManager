@@ -9,9 +9,16 @@ package personnelmanager;
  *
  * @author tabueu
  */
-class Personnel {
+public class Personnel {
   public String id,name, salary, departement;
-    
+  
+  /**
+   * 
+   * @param id
+   * @param name
+   * @param salary
+   * @param departement 
+   */
   public Personnel(String id,String name, String salary, String departement) {
        this(name, salary, departement);
        this.id = id;
@@ -22,6 +29,10 @@ class Personnel {
         this.name = name;
         this.salary = salary;
         this.departement = departement;
+    }
+
+    Personnel() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getName() {

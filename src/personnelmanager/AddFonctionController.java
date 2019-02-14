@@ -60,17 +60,18 @@ public class AddFonctionController implements Initializable {
         Personnel p = this.listPersonnels.get(personnel.getSelectionModel().getSelectedIndex()) ;
        
         //construction du json du personnel
-        JSONObject jSONObjectPerssonnel = new JSONObject();
+       /* JSONObject jSONObjectPerssonnel = new JSONObject();
         jSONObjectPerssonnel.put("id", p.getId());
-       /* jSONObjectPerssonnel.put("name", p.getName());
+        jSONObjectPerssonnel.put("name", p.getName());
         jSONObjectPerssonnel.put("salary", p.getSalary());
-        jSONObjectPerssonnel.put("departement", p.getDepartement());*/
+        jSONObjectPerssonnel.put("departement", p.getDepartement());
         
-        System.out.println(" personnel :  -> <-" + jSONObjectPerssonnel.toJSONString());
+        System.out.println(" personnel :  -> <-" + jSONObjectPerssonnel.toJSONString());*/
         
         //construction final de l'objet
         jSONObject.put("functionName", functionName.getText());
         jSONObject.put("dateDebut", dateDebut.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+       // jSONObject.put("personnel",jSONObjectPerssonnel);
         jSONObject.put("personnel", p.getId());
         
         System.out.println(" Function : -> " + jSONObject.toJSONString());
