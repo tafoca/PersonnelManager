@@ -5,7 +5,6 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="personnelmanager.FXMLDocumentController">
    <children>
       <Label layoutX="120.0" layoutY="61.0" prefHeight="21.0" prefWidth="279.0" text="Add Personnel" textFill="#0d572f">
@@ -16,7 +15,7 @@
       <TextField fx:id="name" layoutX="126.0" layoutY="106.0" prefHeight="25.0" prefWidth="335.0" promptText="Name" />
       <TextField fx:id="salary" layoutX="126.0" layoutY="169.0" prefHeight="25.0" prefWidth="335.0" promptText="salary" />
       <TextField fx:id="departement" layoutX="126.0" layoutY="229.0" prefHeight="25.0" prefWidth="335.0" promptText="Departement" />
-      <Button fx:id="addFonction" layoutX="547.0" layoutY="32.0" mnemonicParsing="false" onAction="#saveFunction" prefHeight="29.0" prefWidth="128.0" style="-fx-background-color: #008759;" text="Add Function" textFill="#ebeeff">
+      <Button fx:id="addFonction" layoutX="527.0" layoutY="32.0" mnemonicParsing="false" onAction="#saveFunction" prefHeight="29.0" prefWidth="128.0" style="-fx-background-color: #008759;" text="Add Function" textFill="#ebeeff">
          <font>
             <Font size="15.0" />
          </font>
@@ -26,7 +25,7 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <Button fx:id="show1" layoutX="547.0" layoutY="77.0" mnemonicParsing="false" onAction="#ShowFonction" style="-fx-background-color: #008759;" text="Show Fonction" textFill="#ebeeff">
+      <Button fx:id="show1" layoutX="527.0" layoutY="77.0" mnemonicParsing="false" onAction="#ShowFonction" style="-fx-background-color: #008759;" text="Show Fonction" textFill="#ebeeff">
          <font>
             <Font size="15.0" />
          </font>
@@ -36,12 +35,17 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <Button fx:id="addRealisation" layoutX="541.0" layoutY="140.0" mnemonicParsing="false" onAction="#saveRealisation" prefHeight="29.0" prefWidth="140.0" style="-fx-background-color: #008759;" text="Add Realisation" textFill="#ebeeff">
+      <Button fx:id="addRealisation" layoutX="378.0" layoutY="410.0" mnemonicParsing="false" onAction="#saveRealisation" prefHeight="29.0" prefWidth="140.0" style="-fx-background-color: #008759;" text="Add Realisation" textFill="#ebeeff">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Button fx:id="showRea" layoutX="537.0" layoutY="180.0" mnemonicParsing="false" onAction="#ShowRealisation" style="-fx-background-color: #008759;" text="Show Realisation" textFill="#ebeeff">
+      <Button fx:id="showRea" layoutX="210.0" layoutY="409.0" mnemonicParsing="false" onAction="#ShowRealisation" style="-fx-background-color: #008759;" text="Show Realisation" textFill="#ebeeff">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="531.0" layoutY="412.0" mnemonicParsing="false" onAction="#addContact" prefHeight="29.0" prefWidth="128.0" style="-fx-background-color: #008759;" text="Add Contact" textFill="#ebeeff">
          <font>
             <Font size="15.0" />
          </font>

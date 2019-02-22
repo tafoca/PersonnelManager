@@ -140,6 +140,12 @@ public class FXMLDocumentController extends Requester implements Initializable {
         String mon_fichier = "/personnelmanager/Realisation/AddRealisation.fxml";
         buildFenetre(mon_fichier);
     }
+    
+    @FXML
+    void addContact(ActionEvent event) throws IOException {
+         String mon_fichier = "/personnelmanager/contact/contact.fxml";
+        buildFenetre(mon_fichier);
+    }
 
     @FXML
     void ShowRealisation(ActionEvent event) throws IOException {

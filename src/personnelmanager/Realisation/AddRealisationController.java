@@ -1,5 +1,6 @@
 package personnelmanager.Realisation;
 
+import com.google.gson.Gson;
 import java.io.IOException;
 import java.net.URL;
 import java.time.format.DateTimeFormatter;
@@ -17,6 +18,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import personnelmanager.Fonction;
+import personnelmanager.models.Realisation;
 import personnelmanager.models.Requester;
 
 /**
@@ -78,14 +80,29 @@ public class AddRealisationController extends Requester implements Initializable
         JSONObject jSONObject = new JSONObject();
         String url_endpoint = "http://localhost:8080/add-realisation";
         String path_return_file = "/personnelmanager/Realisation/AddRealisation.fxml";
-        jSONObject.put("function", (this.fonctions.get(function.getSelectionModel().getSelectedIndex())).getId());
+        Gson gson =new Gson();
+        String jsonFct = gson.toJson(this.fonctions.get(function.getSelectionModel().getSelectedIndex()));
+        Realisation r =new Realisation(realisationName.getText(), 
+                description.getText(),
+                beginRealisation.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")),
+                endRealisation.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+        r.setFunction(this.fonctions.get(function.getSelectionModel().getSelectedIndex()));
+        String jsonRealisation = gson.toJson(r);
+        
+        //Realisation realisation1 = gson.fromJson(realisation.toJSONString().toString(), Realisation.class);
+        jSONObject.put("function", jsonFct);
+        //  jSONObject.put("function", (this.fonctions.get(function.getSelectionModel().getSelectedIndex())).getId());
         jSONObject.put("realisationName", realisationName.getText());
         jSONObject.put("description", description.getText());
         jSONObject.put("beginRealisation", beginRealisation.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
         jSONObject.put("endRealisation", endRealisation.getValue().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
         System.out.println(" Realisation : -> " + jSONObject.toJSONString());
         
-        buildPost(jSONObject, url_endpoint, path_return_file);
+        //buildPost(jSONObject, url_endpoint, path_return_file);
+        
+        buildPost_Gson(jsonRealisation, url_endpoint, path_return_file);
     }
+
+   
 
 }
